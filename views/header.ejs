@@ -1,0 +1,64 @@
+<nav class="navbar navbar-light navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="/images/hnk-orijent-logo.png" alt="Club Logo">
+        </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: <%= menu == 1 ? 'bold' : 'small' %>" href="/">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: <%= menu == 3 ? 'bold' : 'small' %>" href="/trade">Pool (Fund)</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: <%= menu == 2 ? 'bold' : 'small' %>" href="/invest">Invest</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: <%= menu == 3 ? 'bold' : 'small' %>" href="/about">How It Works</a>
+                </li>
+                <!--
+                <li class="nav-item"><span style="color:white;">-</span></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/devest">DeVest</a>
+                </li>
+                -->
+
+                <li class="nav-item">
+                    <a class="nav-link" style="font-weight: <%= menu == 4 ? 'bold' : 'small' %>" href="/roadmap">Roadmap</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/media">Media</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<style>
+    h1 {
+        margin-top: inherit;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .header-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    a {
+        text-decoration: none;
+    }
+    ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+</style>

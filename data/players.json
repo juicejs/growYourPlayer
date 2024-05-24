@@ -1,0 +1,823 @@
+[
+  {
+    "name": "Dominik Mulac",
+    "age": "23",
+    "number": 4,
+    "balance": 100,
+    "investors": 50,
+    "roi": 20,
+    "tag": {
+      "name": "NEW",
+      "color": "#2d6924"
+    },
+    "image": "players/Dominik-Mulac-300x300.png",
+    "modalId": 1,
+    "chart": {
+      "price": 10,
+      "test2": 20,
+      "test3": 30,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "300.000",
+      "link": "https://www.transfermarkt.com/dominik-mulac/profil/spieler/494849"
+    },
+    "position": "Defender",
+    "detailedPosition": "Centre-Back",
+    "info": "Klasičan stoperski broj i poziciju zauzeo je Dominik Mulac. Nogomet igra od 2006. godine kada dolazi u HNK Rijeku i tamo ostaje do 2018. U Orijent 1919 dolazi nakon sezone provedene u talijanskom  U.S.D. Ciserano. Mulki, kako ga suigrači zovu, može se pohvaliti izrazitom snalažljivošću na terenu te nogometnom inteligencijom.",
+    "description": "",
+    "birth_place": "Rijeka",
+    "birth_date": "03.02.1999.",
+    "height": "185cm",
+    "weight": "78kg",
+    "type": "bid"
+  },
+  {
+    "name": "Nikola Jadrić",
+    "age": "19",
+    "number": 18,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "NEW",
+      "color": "#2d6924"
+    },
+    "image": "players/Nikola-Jadrić-300x300.png",
+    "modalId": 22,
+    "chart": {
+      "price": 10,
+      "test2": 10,
+      "test3": 40,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "100.000",
+      "link": "https://www.transfermarkt.com/nikola-daniel-jadric/profil/spieler/938435"
+    },
+    "position": "Midfielder",
+    "detailedPosition": "Central Midfield",
+    "birth_place": "Canberra, AU",
+    "info": "U-23 Australia",
+    "description": "Iako se s hrvatskim jezikom služi malo otežano, ovaj Orijentov veznjak itekako dobro zna gdje mu je mjesto na zelenom terenu. Svoju agresivnost i talent počeo je kovati u matičnoj zemlji u nogometnom klubu Act. Prije nego li je prešao u redove Orijenta, zaigrao je i za HNK Rijeku.",
+    "country": "AU",
+    "birth_date": "12.09.2002",
+    "height": "173cm",
+    "weight": "70kg",
+    "type": "shared"
+  },
+  {
+    "name": "Nikola Macolić",
+    "age": "18",
+    "number": 15,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "new",
+      "color": "#B01619"
+    },
+    "image": "players/Nikola-Macolic-300x300.png",
+    "modalId": 18,
+    "chart": {
+      "price": 10,
+      "test2": 10,
+      "test3": 40,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "450.000",
+      "link": "https://www.transfermarkt.com/nikola-macolic/profil/spieler/921252"
+    },
+    "position": "Left-Back",
+    "info": "",
+    "description": "Nikola je jedan od najmlađih igrača u Orijentovom kadru ove sezone što je sigurno poseban motiv za dokazivanje ovom talentiranom veznjaku. S nogometom se upoznao u NK Rab. Prije nego li ga je put odveo na Krimeju, svoje nogometne vještine brusio je i u NK Rijeka. Kao nogometne kvalitete moramo izdvojiti njegovu smirenost s loptom i nogometnu inteligenciju.",
+    "detailedPosition": "Central Midfield",
+    "birth_place": "Rijeka",
+    "birth_date": "16.06.2003.",
+    "info": "Croatia U19",
+    "height": "185cm",
+    "weight": "78kg",
+    "type": "shared2"
+  },
+  {
+    "name": "Nino Mohorovičić",
+    "age": "21",
+    "number": 19,
+    "balance": 101,
+    "investors": 51,
+    "roi": 15,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Nino-Mohorovicic-300x300.png",
+    "modalId": 2,
+    "chart": {
+      "price": 15,
+      "test2": 15,
+      "test3": 15,
+      "test4": 55
+    },
+    "transfermarkt": {
+      "price": "200.000",
+      "link": "https://www.transfermarkt.com/nino-mohorovicic/profil/spieler/393834"
+    },
+    "position": "Midfielder",
+    "detailedPosition": "Central Midfield",
+    "birth_place": "Rijeka",
+    "birth_date": "25.04.2000.",
+    "height": "175cm",
+    "weight": "75kg"
+  },
+  {
+    "name": "Patrik Srzentić",
+    "age": "21",
+    "number": 18,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Patrik-Srzentic-300x300.png",
+    "modalId": 3,
+    "chart": {
+      "price": 5,
+      "test2": 5,
+      "test3": 5,
+      "test4": 85
+    },
+    "transfermarkt": {
+      "price": "25.000",
+      "link": "https://www.transfermarkt.com/patrik-srzentic/profil/spieler/798018"
+    },
+    "position": "Forward",
+    "detailedPosition": "Centre-Forward",
+    "birth_place": "Rijeka",
+    "birth_date": "06.09.2000.",
+    "height": "190cm",
+    "weight": "84kg"
+  },
+  {
+    "name": "Mario Tadejević",
+    "age": "32",
+    "number": 28,
+    "balance": 100,
+    "investors": 50,
+    "roi": 20,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Mario-Tadejevic-300x300.png",
+    "modalId": 4,
+    "chart": {
+      "price": 10,
+      "test2": 10,
+      "test3": 40,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "100.000",
+      "link": "https://www.transfermarkt.com/mario-tadejevic/profil/spieler/74027"
+    },
+    "position": "Defender",
+    "detailedPosition": "Centre-Back",
+    "birth_place": "Rijeka",
+    "birth_date": "28.08.1989.",
+    "height": "184cm",
+    "weight": "79kg"
+  },
+  {
+    "name": "Edin Fatić",
+    "age": "24",
+    "number": 7,
+    "balance": 101,
+    "investors": 51,
+    "roi": 15,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Edin-Fatic-300x300.png",
+    "modalId": 5,
+    "chart": {
+      "price": 40,
+      "test2": 20,
+      "test3": 20,
+      "test4": 20
+    },
+    "transfermarkt": {
+      "price": "350.000",
+      "link": "https://www.transfermarkt.com/edin-fatic/profil/spieler/427368"
+    },
+    "position": "Midfielder",
+    "detailedPosition": "Defensive Midfield",
+    "birth_place": "Rijeka",
+    "birth_date": "21.05.1997",
+    "height": "190cm",
+    "weight": "81kg"
+  },
+  {
+    "name": "Emanuel Črnko",
+    "age": "22",
+    "number": 10,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Emanuel-Crnko-300x300.png",
+    "modalId": 7,
+    "chart": {
+      "price": 10,
+      "test2": 20,
+      "test3": 5,
+      "test4": 65
+    },
+    "transfermarkt": {
+      "price": "150.000",
+      "link": "https://www.transfermarkt.com/emanuel-crnko/profil/spieler/357800"
+    },
+    "position": "Forward",
+    "detailedPosition": "Centre-Forward",
+    "birth_place": "Varaždin",
+    "birth_date": "07.04.1999.",
+    "height": "173cm",
+    "weight": "71cm"
+  },
+  {
+    "name": "Kristian Boglić",
+    "age": "22",
+    "number": 1,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Kristian-Boglic-300x300.png",
+    "modalId": 8,
+    "chart": {
+      "price": 90,
+      "test2": 2,
+      "test3": 3,
+      "test4": 5
+    },
+    "transfermarkt": {
+      "price": "75.000",
+      "link": "https://www.transfermarkt.com/kristian-boglic/profil/spieler/455101"
+    },
+    "position": "Goalkeeper",
+    "detailedPosition": "Goalkeeper",
+    "birth_place": "Rijeka",
+    "birth_date": "12.05.1999.",
+    "height": "188cm",
+    "weight": "91kg"
+  },
+  {
+    "name": "Karlo Senčar",
+    "age": "20",
+    "number": 3,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Karlo-Sencar-300x300.png",
+    "modalId": 9,
+    "chart": {
+      "price": 70,
+      "test2": 10,
+      "test3": 10,
+      "test4": 10
+    },
+    "transfermarkt": {
+      "price": "25.000",
+      "link": "https://www.transfermarkt.com/karlo-sencar/profil/spieler/587511"
+    },
+    "position": "Defender",
+    "detailedPosition": "Left-Back",
+    "birth_place": "Rijeka",
+    "birth_date": "14.01.2002.",
+    "height": "184cm",
+    "weight": "84kg"
+  },
+  {
+    "name": "Gojko Gadže",
+    "age": "22",
+    "number": 24,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Gojko-Gadze-300x300.png",
+    "modalId": 10,
+    "chart": {
+      "price": 13,
+      "test2": 7,
+      "test3": 60,
+      "test4": 20
+    },
+    "transfermarkt": {
+      "price": "100.000",
+      "link": "https://www.transfermarkt.com/gojko-gadze/profil/spieler/434712"
+    },
+    "position": "Midfielder",
+    "detailedPosition": "Attacking Midfield",
+    "birth_place": "Mostar, BIH",
+    "birth_date": "10.01.2000.",
+    "height": "179cm",
+    "weight": "77kg"
+  },
+  {
+    "name": "Andro Švrljuga",
+    "age": "36",
+    "number": 11,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Andro-Svrljuga-300x300.png",
+    "modalId": 11,
+    "chart": {
+      "price": 5,
+      "test2": 20,
+      "test3": 25,
+      "test4": 50
+    },
+    "transfermarkt": {
+      "price": "100.000",
+      "link": "https://www.transfermarkt.com/andro-svrljuga/profil/spieler/38857"
+    },
+    "position": "Defender",
+    "detailedPosition": "Right-Back",
+    "birth_place": "Rijeka",
+    "birth_date": "24.10.1985",
+    "height": "176cm",
+    "weight": "75kg"
+  },
+  {
+    "name": "Marko Putnik",
+    "age": "21",
+    "number": 23,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Marko-Putnik-300x300.png",
+    "modalId": 12,
+    "chart": {
+      "price": 10,
+      "test2": 20,
+      "test3": 50,
+      "test4": 20
+    },
+    "transfermarkt": {
+      "price": "100.000",
+      "link": "https://www.transfermarkt.com/marko-putnik/profil/spieler/491043"
+    },
+    "position": "Midfielder",
+    "detailedPosition": "Centre-Back",
+    "birth_place": "Pula",
+    "birth_date": "27.02.2001",
+    "height": "173cm",
+    "weight": "74kg"
+  },
+  {
+    "name": "Leo Margan",
+    "age": "20",
+    "number": 45,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Leo-Margan-300x300.png",
+    "modalId": 13,
+    "chart": {
+      "price": 10,
+      "test2": 20,
+      "test3": 50,
+      "test4": 20
+    },
+    "transfermarkt": {
+      "price": "10.000",
+      "link": "https://www.transfermarkt.com/leo-margan/profil/spieler/651389"
+    },
+    "position": "Goalkeeper",
+    "detailedPosition": "Goalkeeper",
+    "birth_place": "Rijeka",
+    "birth_date": "18.01.2002",
+    "height": "192cm",
+    "weight": "85kg"
+  },
+  {
+    "name": "Filip Zrilić",
+    "age": "21",
+    "number": 21,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Filip-Zrilic-300x300.png",
+    "modalId": 14,
+    "chart": {
+      "price": 10,
+      "test2": 10,
+      "test3": 40,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "250.000",
+      "link": "https://www.transfermarkt.com/filip-zrilic/profil/spieler/664814"
+    },
+    "position": "Midfielder",
+    "detailedPosition": "Attacking Midfield",
+    "birth_place": "Rijeka",
+    "birth_date": "04.02.2001.",
+    "height": "185cm",
+    "weight": "80kg"
+  },
+  {
+    "name": "Patrik Mohorović",
+    "age": "22",
+    "number": 30,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Patrik-Mohorovic-300x300.png",
+    "modalId": 15,
+    "chart": {
+      "price": 10,
+      "test2": 10,
+      "test3": 40,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "50.000",
+      "link": "https://www.transfermarkt.com/patrik-mohorovic/profil/spieler/537273"
+    },
+    "position": "Goalkeeper",
+    "detailedPosition": "Goalkeeper",
+    "birth_place": "Rijeka",
+    "birth_date": "24.05.1999.",
+    "height": "190cm",
+    "weight": "83kg"
+  },
+  {
+    "name": "Matija Matulja",
+    "age": "21",
+    "number": 27,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Matija-Matulja-300x300.png",
+    "modalId": 17,
+    "chart": {
+      "price": 10,
+      "test2": 10,
+      "test3": 40,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "100.000",
+      "link": "https://www.transfermarkt.com/matija-matulja/profil/spieler/571305"
+    },
+    "position": "Forward",
+    "detailedPosition": "Centre-Forward",
+    "birth_place": "Rijeka",
+    "birth_date": "20.06.2000.",
+    "height": "171cm",
+    "weight": "65kg"
+  },
+  {
+    "name": "Tomislav Bokulić",
+    "age": "20",
+    "number": 12,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Tomislav-Bokulic-300x300.png",
+    "modalId": 19,
+    "chart": {
+      "price": 10,
+      "test2": 10,
+      "test3": 40,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "10.000",
+      "link": "https://www.transfermarkt.com/tomislav-bokulic/profil/spieler/891544"
+    },
+    "position": "Defender",
+    "detailedPosition": "Centre-Back",
+    "birth_place": "Rijeka",
+    "birth_date": "24.02.2002.",
+    "height": "186cm",
+    "weight": "73kg"
+  },
+  {
+    "name": "Noa Zuliani",
+    "age": "19",
+    "number": 6,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Noa-Zuliani-300x300.png",
+    "modalId": 20,
+    "chart": {
+      "price": 10,
+      "test2": 10,
+      "test3": 40,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "10.000",
+      "link": "https://www.transfermarkt.com/noa-zuliani/profil/spieler/846543"
+    },
+    "position": "Defender",
+    "detailedPosition": "Centre-Back",
+    "birth_place": "Rijeka",
+    "birth_date": "28.01.2003.",
+    "height": "182cm",
+    "weight": "75kg"
+  },
+  {
+    "name": "Marko Jelić",
+    "age": "19",
+    "number": 20,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Marko-Jelić-300x300.png",
+    "modalId": 21,
+    "chart": {
+      "price": 10,
+      "test2": 10,
+      "test3": 40,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "10.000",
+      "link": "https://www.transfermarkt.com/marko-jelic/profil/spieler/865349"
+    },
+    "position": "Forward",
+    "detailedPosition": "Centre-Forward",
+    "birth_place": "Rijeka",
+    "birth_date": "03.08.2002.",
+    "height": "182cm",
+    "weight": "75kg"
+  },
+  {
+    "name": "Ivan Durdov",
+    "age": "21",
+    "number": 14,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Ivan-Durdov-300x300.png",
+    "modalId": 23,
+    "chart": {
+      "price": 10,
+      "test2": 10,
+      "test3": 40,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "350.000",
+      "link": "https://www.transfermarkt.com/ivan-durdov/profil/spieler/584809"
+    },
+    "position": "Forward",
+    "detailedPosition": "Centre-Forward",
+    "birth_place": "Split",
+    "birth_date": "17.07.2000",
+    "height": "194cm",
+    "weight": "87kg"
+  },
+  {
+    "name": "Dino Dukađin",
+    "age": "22",
+    "number": 8,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Dino-Dukadin-300x300.png",
+    "modalId": 24,
+    "chart": {
+      "price": 10,
+      "test2": 10,
+      "test3": 40,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "-",
+      "link": "https://www.transfermarkt.com/dino-dukadjin/profil/spieler/494854"
+    },
+    "position": "Forward",
+    "detailedPosition": "Centre-Forward",
+    "birth_place": "Rijeka",
+    "birth_date": "22.04.1999.",
+    "height": "181cm",
+    "weight": "80kg"
+  },
+  {
+    "name": "Elian Demirović",
+    "age": "21",
+    "number": 17,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Elian-Demirovic-300x300.png",
+    "modalId": 25,
+    "chart": {
+      "price": 10,
+      "test2": 10,
+      "test3": 40,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "75.000",
+      "link": "https://www.transfermarkt.com/elian-demirovic/profil/spieler/459937"
+    },
+    "position": "Midfielder",
+    "detailedPosition": "Central Midfield",
+    "birth_place": "Štemper pri Gorici, SLO",
+    "birth_date": "01.06.2000.",
+    "height": "184cm",
+    "weight": "78kg"
+  },
+  {
+    "name": "Jakov Delibegović",
+    "age": "19",
+    "number": 22,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Jakov-Delibegovic-300x300.png",
+    "modalId": 26,
+    "chart": {
+      "price": 10,
+      "test2": 10,
+      "test3": 40,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "-",
+      "link": "https://www.transfermarkt.com/jakov-delibegovic/profil/spieler/927839"
+    },
+    "position": "Defender",
+    "detailedPosition": "Centre-Back",
+    "birth_place": "Rijeka",
+    "birth_date": "29.06.2002.",
+    "height": "179cm",
+    "weight": "70kg"
+  },
+  {
+    "name": "Ivan Biškupović",
+    "age": "21",
+    "number": 13,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Ivan-Biskupovic-300x300.png",
+    "modalId": 27,
+    "chart": {
+      "price": 10,
+      "test2": 10,
+      "test3": 40,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "-",
+      "link": "#"
+    },
+    "position": "Forward",
+    "detailedPosition": "Centre-Forward",
+    "birth_place": "Rijeka",
+    "birth_date": "05.02.2001.",
+    "height": "177cm",
+    "weight": "73kg"
+  },
+  {
+    "name": "Vito Marot",
+    "age": "18",
+    "number": 20,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Vito-Marot-300x300.png",
+    "modalId": 28,
+    "chart": {
+      "price": 10,
+      "test2": 10,
+      "test3": 40,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "-",
+      "link": "https://www.transfermarkt.com/vito-marot/profil/spieler/984115"
+    },
+    "position": "Midfielder",
+    "detailedPosition": "Central Midfield",
+    "birth_place": "Rijeka",
+    "birth_date": "05.02.2001.",
+    "height": "176cm",
+    "weight": "67kg"
+  },
+  {
+    "name": "Leon Petrović",
+    "age": "22",
+    "number": 9,
+    "balance": 151,
+    "investors": 71,
+    "roi": 17,
+    "tag": {
+      "name": "upcoming",
+      "color": "#B01619"
+    },
+    "image": "players/Leon-Petrovic-300x300.png",
+    "modalId": 29,
+    "chart": {
+      "price": 10,
+      "test2": 10,
+      "test3": 40,
+      "test4": 40
+    },
+    "transfermarkt": {
+      "price": "10.000",
+      "link": "https://www.transfermarkt.com/leon-petrovic/profil/spieler/371005"
+    },
+    "position": "Forward",
+    "detailedPosition": "Centre-Forward",
+    "birth_place": "Rijeka",
+    "birth_date": "18.02.2000.",
+    "height": "185cm",
+    "weight": "77kg"
+  }
+]

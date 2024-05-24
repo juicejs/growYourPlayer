@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/vue-promise-btn.css" crossorigin="use-credentials">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <!-- jQuery -->
+    <script src="/js/jquery.min.js"></script>
+
+    <!-- Cookies -->
+    <script src="/js/js.cookie.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBL3EPC6BC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-DBL3EPC6BC');
+    </script>
+</head>
+<body>
+<router-view></router-view>
+
+<div class="container">
+    <div class="hero-and-solution">
+        <section class="hero">
+
+            <%- include("header.ejs", { menu: 1 }) %>
+        </section>
+    </div>
+    <div class="top-mobile">
+<!--        <img class="top-img-desk" src="../images/mediaTop_desktop.png" alt="">-->
+        <img class="top-mobile-img-mob" src="../images/mediaTop_mob.png" alt="">
+
+    </div>
+    <div class=" top-desktop">
+        <img class="top-desktop-left" src="../images/token.png" alt="">
+        <img class="top-desktop-right" src="../images/dino-laying.png" alt="">
+        <img class="top-desktop-middle" src="../images/ori.png" alt="">
+        <h1 class="top-desktop-title">NEWS</h1>
+    </div>
+    <div style="background: white;height: 30px;line-height: 30px;">
+        <div class="ticker-wrap ">
+            <div class="ticker">
+                <div class="ticker__item">$ORI @ <span id="price"></span></div>
+                <div class="ticker__item" style="color:black;font-weight:normal;">--- TRADE NOW ON PANCAKESWAP
+                    ---
+                </div>
+                <div class="ticker__item" id="btcPrice">BNB @ <span id="bnbPrice"></span></div>
+                <div class="ticker__item" style="color:black;font-weight:normal;">--- TRADE NOW ON PANCAKESWAP
+                    ---
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="media_white media-container">
+
+        <div class="left ">
+            <h1>MERCH</h1>
+            <p>Ori the dragon is Orijent's mascot, symbolizing power, wisdom & strength. He will be seen boosting the
+                club's morale and leading them to victory!
+                In order to establish the brand and connect to the community, we're giving out $ORI Stickers on football
+                games, making banners throughout the city and we
+                are working daily on new ideas and means of promotion.</p>
+        </div>
+
+        <div class="right">
+            <div class="right-left">
+            <img class="banner" src="../images/media/ori_banner.jpg">
+            <video class="mascot" autoplay loop type="video/mp4" src="images/media/media_mascot.mp4"></video>
+            </div>
+            <video class="stickers" controls src="images/media/media_stickers.mp4"></video>
+
+
+        </div>
+
+    </section>
+
+    <section class="media_red ">
+        <div class="left">
+            <img src="../images/newspaper_image.png" alt="">
+
+        </div>
+        <div class="right">
+            <h1>NEWS ARTICLES</h1>
+            <div class="logos">
+                <img class="logos-logo1" src="../images/yahooLogo.png" alt="yahoo logo">
+                <img class="logos-logo2" src="./images/marketWatchLogo.png" alt="">
+                <img class="logos-logo3" src="./images/benzingaLogo.png" alt="">
+            </div>
+            <p>$ORI is well known in the local Croatian community, we have sparked the interest of the local news and
+                media outlets. <br>
+                We have been invited to many interviews to present the revolutionary DeVest platform which has been
+                acknowledged as a novel way of handling investments in the football scene, but also giving a broader use
+                case to cryptocurrencies. <br>
+                We are also partnering with the most popular news agencies and have featured articles on Yahoo Finance,
+                MarketWatch, Benzinga, and many more</p>
+        </div>
+    </section>
+
+    <section class="media_white media-container ">
+        <div class="left">
+            <h1>SOCIAL MEDIA</h1>
+            <p>We're actively posting updates on our social media about $ORI to keep
+                in touch with our fans, investors and community.
+                Other than that, we're partnering up with big names and famous influencers
+                to promote our project. We've been featured by a huge TikTok influencer @gurintok with many more collabs
+                to come!</p>
+        </div>
+        <div class="right">
+            <div class="right-left">
+                <div>
+                <img class="twitter " src="../images/twitterLogo.png" alt="">
+                <img class="tiktok-img " src="../images/tiktok.png" alt="">
+                </div>
+                <video class="ori-video" autoplay loop src="../images/media/mars_lightspeed.mp4"></video>
+            </div>
+            <video class="tiktok-video" controls src="../images/media/tiktok.MP4"></video>
+
+        </div>
+    </section>
+
+    <!--
+    <section class="media_white">
+        <div class="left">
+            <h1>LOCAL</h1>
+            <p> We are promoting $ORI locally through promotional banners, adverts, giving out $ORI Token stickers on football games and much more!</p>
+        </div>
+        <div class="right">
+            <div class="banner">
+                <img class="banner-office" src="images/ori_banner.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section class="media_red">
+        <div class="left">
+            <div class="banner">
+                <img class="banner-office" src="images/ori_banner.jpg">
+            </div>
+        </div>
+        <div class="right">
+            <h1>NEWS ARTICLES</h1>
+            <p>$ORI is well known in the regional Croatian community, we have sparked interest of the local news and media.
+                We have been invited to many interviews in order to present the revolutionary decentralised soccer investment plan.</p>
+        </div>
+    </section>
+    -->
+    <%- include("footer.ejs") %>
+</div>
+
+<!--
+    <section class="media">
+        <h1>$ORI in the Media</h1>
+            <img src="images/ori_media.png">
+        <h1>LOCAL</h1>
+        <div class="left">
+
+            <img src="images/ori_banner.jpg">
+            We are promoting $ORI locally through promotional banners, adverts, giving out $ORI Token stickers on football games and much more!
+        </div>
+        <div class="media__red">
+            <h1>NEWS ARTICLES</h1>
+        </div>
+        <div class="media__white">
+            <h1>INFLUENCERS</h1>
+            <img src="images/ori_banner.jpg">
+            To reach out to a wider audience public, we have been collaborating with social media influencers. Our first collab was on TikTok with @gurintok
+        </div>
+        <div class="media__red">
+            <h1>NEWS ARTICLES</h1>
+            $ORI is well known in the regional Croatian community, we have sparked interest of the local news and media. We have been invited to many interviews in order to present the revolutionary decentralised soccer investment plan.
+        </div>
+        </section>
+        -->
+</body>
+<script>
+    let cookie = document.getElementById('cookie');
+    document.querySelector('.acceptCookies').addEventListener('click', function () {
+        cookie.style.display = 'none';
+        Cookies.set('permission', 'granted');
+        window.consentGranted();
+    })
+
+    $(document).ready(function () {
+        if (!Cookies.get('permission')) {
+            cookie.style.display = "block";
+        }
+    });
+
+
+    const reloadPrice = async () => {
+        const req = await fetch("https://api.pancakeswap.info/api/v2/tokens/0x54cC4dB6f878A1cDE6BdD0c8bEfCf70f5DABF206");
+        let ori = await req.json();
+
+        let oriBnb = parseFloat(ori.data.price_BNB);
+
+        const stats = await fetch("https://api1.binance.com/api/v3/ticker/24hr?symbol=BNBUSDT");
+        this.ticketBNB = await stats.json();
+
+        let usd = parseFloat(this.ticketBNB.lastPrice);
+
+        document.title = "$ORI @ " + (oriBnb * usd).toFixed(3) + "$";
+        document.querySelector("#price").innerHTML = (oriBnb * usd).toFixed(3) + "$";
+        document.querySelector("#bnbPrice").innerHTML = (usd).toFixed(3) + "$";
+    }
+    reloadPrice();
+    setInterval(() => {
+        reloadPrice();
+    }, 10000);
+</script>
+<script src="/js/bootstrap.min.js"></script>
+</html>

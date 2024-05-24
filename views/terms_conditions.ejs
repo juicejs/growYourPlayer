@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>$ORI Privacy Policy</title>
+
+    <!-- jQuery -->
+    <script src="/js/jquery.min.js"></script>
+
+    <!-- Cookies -->
+    <script src="/js/js.cookie.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBL3EPC6BC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DBL3EPC6BC');
+    </script>
+
+</head>
+
+<body>
+<div class="container pb-5" style="padding: 0">
+    <div class="hero-and-solution">
+        <section class="hero">
+            <%- include("header.ejs") %>
+        </section>
+    </div>
+
+
+    <div style="color: white; padding-left: 10%; padding-right: 10%; padding-top: 5%; padding-bottom: 5%">
+
+            <h1>Terms and Conditions</h1>
+            <br>
+            The Website, Content, and Services are provided without any guarantees, conditions as to its accuracy, quality, and fit for a particular purpose or need. JuicEcommerce d.o.o. does not guarantee that the Website and Services are error-free, or will operate without interruption. We are not in charge of any substance of outside sites that are connected to our pages.
+            <br><br>
+            JuicEcommerce d.o.o. shall not be liable for any events that may include civil, criminal, and administrative actions, Server hack or damage that may arise, if such use is forbidden or otherwise limited in your country, or any new law regarding that comes in power or adapted by the authorities, failure of power supply or communication system or other similar circumstances that prevent the Parties from the proper fulfillment of their obligations hereunder. And we are also not liable for the use or inability to use the Website and Services by anyone. We are not liable for any lost of fund due to cross chain transfer, internal transaction (in Ethereum or Binance Smart Chain) or cross token transfer made by you or your client. In such case funds will not be recovered in any case.
+            <br><br>
+            Any misuse of the services or the platforms by (“you” or “clients”) will be considered as an act of violation against the terms, so, therefore, legal action might be taken against you.
+            <br><br>
+            Cryptocurrency trading can lead to large and immediate financial losses. Transactions in cryptocurrency may be irreversible, and, accordingly, losses due to fraudulent or accidental transactions may not be recoverable. The nature of cryptocurrency may lead to an increased risk of fraud or cyber-attack.
+
+    </div>
+
+        <%- include("footer.ejs") %>
+</div>
+
+</body>
+
+<div id="cookie" class="juice-container pyj">
+    <p class="small">
+        We use cookies to provide you with better service, analyze page traffic, personalize content, and target advertising.
+        If you continue to use this site, you agree to the use of cookies. Read our Privacy Policy for how we use cookies and how you can control them.
+        <a href="/privacy_policy">Privacy Policy</a>.</p>
+    <button type="button" class="btn btn-primary acceptCookies rounded-0">Accept cookies</button>
+</div>
+
+<script>
+    let cookie = document.getElementById('cookie');
+    document.querySelector('.acceptCookies').addEventListener('click', function () {
+        cookie.style.display = 'none';
+        Cookies.set('permission', 'granted');
+        window.consentGranted();
+    })
+
+    $(document).ready(function () {
+        if (!Cookies.get('permission')) {
+            cookie.style.display = "block";
+        }
+    });
+</script>
+<script src="/js/bootstrap.min.js"></script>
+
+</html>

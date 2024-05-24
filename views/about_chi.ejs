@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/vue-promise-btn.css" crossorigin="use-credentials">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <!-- jQuery -->
+    <script src="/js/jquery.min.js"></script>
+
+    <!-- Cookies -->
+    <script src="/js/js.cookie.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBL3EPC6BC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-DBL3EPC6BC');
+    </script>
+</head>
+<body>
+<router-view></router-view>
+<div class="container pb-5" style="padding: 0">
+    <div class="hero-and-solution">
+        <section class="hero">
+            <%- include("header.ejs", { menu: 3 }) %>
+        </section>
+    </div>
+    <div class="container" style="padding: 5px 0 0 30px; height: 40px;">
+        <a href="/about/zh">
+            <button style="height: 25px; width: 25px;border-radius: 50%;background-image:url('../images/cnflag.svg');background-repeat: no-repeat; border-width: 0px;
+  background-size: cover;"></button>
+        </a>
+        <a href="/about/ar">
+            <button style="height: 25px; width: 25px;border-radius: 50%;background-image:url('../images/sa.svg');background-repeat: no-repeat; border-width: 0px;
+  background-size: cover;"></button>
+        </a>
+        <a href="/about">
+            <button style="height: 25px; width: 25px;border-radius: 50%;background-image:url('../images/us.svg');background-repeat: no-repeat;border-width: 0px;
+  background-size: cover;"></button>
+        </a>
+        <a href="/about/hr">
+            <button style="height: 25px; width: 25px;border-radius: 50%;background-image:url('../images/hr.svg');background-repeat: no-repeat;border-width: 0px;
+  background-size: cover;"></button>
+        </a>
+
+    </div>
+</div>
+<div class="container">
+
+
+    <div class="newsHero firstHero">
+        <h1>有形权益代币(TST)</h1>
+        <h2>去中心化的股东管理解决方案以及有形资产的质押投资</h2>
+        <img class="firstHero-logo" src="../images/juiceLogo.png" alt="juice logo">
+
+    </div>
+    <div class="newsHero otherHero">
+        <h1>有形权益代币(TST)</h1>
+        <h2>TST与NFT是相似的概念，它与NFT的不同之处在于TST并不是单一所有权，所有者只占有TST的部分所有权。所有权将以百分比的形式显示在你的数字钱包中。与流动性池机制相反，所有权的交换是通过竞价最终决定。
+        </h2>
+        <img class="slider-2-image" src="../images/shares-cercle.png" alt="">
+        <h3 class="share-1">10%</h3>
+        <h3 class="share-2">10%</h3>
+        <h3 class="share-3">20% - @ 200$ORI</h3>
+        <h3 class="share-4">60%</h3>
+        <img class="otherHero-slider2-logo" src="../images/juiceLogo.png" alt="juice logo">
+
+    </div>
+    <div class="newsHero otherHero">
+        <h1>有形权益代币- 税</h1>
+        <h2>作为一种DeFi工具，TST可以为有形资产提供资金，这些资产的价值会得到增长，是得益于在每一笔交易中，都会一定的税费会向主体征收。</h2>
+        <img class="slider-3-image" src="../images/shares-cercle.png" alt="">
+        <img class="slider-3-arrow1" src="../images/arrow_right.png" alt="">
+        <img class="slider-3-arrow2" src="../images/arrow_right.png" alt="">
+        <img class="slider-3-losange" src="../images/rotatedSquare.png" alt="Tangible Subject">
+
+        <h3 class="text-1-chi">购买of 20%</h3>
+        <h3 class="text-2">1000 $ORI</h3>
+        <h3 class="text-3-chi">总值是总锁定价值</h3>
+        <h3 class="text-4">100 $ORI</h3>
+        <h3 class="text-5">税 5%</h3>
+        <h5 class="text-6">有形资产主体</h5>
+        <img class="otherHero-slider2-logo" src="../images/juiceLogo.png" alt="juice logo">
+
+    </div>
+    <div class="newsHero slider-4">
+        <h1>使用$ORI进行有形权益投资</h1>
+        <h2>去中心化的体育俱乐部投资，允许所有人参与投资俱乐部的有形资产比如球员及资源，并将伴随着他们的成长而从中获得收益。</h2>
+        <img class="slider-4-dino" src="../images/dino-standing.png" alt="ori standing pic">
+        <div class="slider-4-logos">
+            <img class="slider-4-logos-1" src="../images/orijentLogo.png" alt="orijent logo">
+            <img class="slider-4-logos-2" src="../images/juiceLogo.png" alt="juice logo">
+        </div>
+    </div>
+    <div class="newsHero otherHero">
+        <h1>有形权益投资</h1>
+        <ol class="numberList">
+            <li><h2>投资者可以通过投资俱乐部的有形资产，并通过其增值获得收益。</h2></li>
+            <li><h2>每一笔买卖都会收税并分配给球员。</h2></li>
+            <li><h2>俱乐部或者赞助商提供的特别奖励，将被所有ORI持有者共享。</h2>
+            </li>
+            <li><h2>当球员被转会交易到别的俱乐部时，俱乐部将按照一定的比例向所有TST股东支付ORI。</h2></li>
+            <li><h2>TST将提供快速大量的收益给投资者，与此同时，这种收益是可以持续增长的。</h2></li>
+        </ol>
+        <div class="otherHero-slider5-logos">
+            <img class="otherHero-slider5-logos-1" src="../images/orijentLogo.png" alt="orijent logo">
+            <img class="otherHero-slider5-logos-2" src="../images/juiceLogo.png" alt="juice logo">
+        </div>
+    </div>
+    <div class="newsHero slider-6">
+        <h1>从球员的成功和奖励中获得投资球员的收益</h1>
+        <img class="slide-6-card" src="../images/players/dominik_Mulac.png" alt="dominik Lulac card">
+        <img class="slide-6-profile" src="../images/players/player-profile.png" alt="player profile">
+        <img class="slide-6-chart" src="../images/shares-cercle.png" alt="chart">
+
+        <h3 class="slider-6-txt1">购买 20%</h3>
+        <h3 class="slider-6-txt2">进球奖励</h3>
+        <h3 class="slider-6-txt3">球赛获胜奖励</h3>
+        <h3 class="slider-6-txt4">转会交易奖励<br>($ORI)</h3>
+        <h3 class="slider-6-txt5">持有者会获得俱乐部的空投奖励以及利润转让</h3>
+        <h3 class="slider-6-txt6">额外的收入可以促进球员的进步和提升，从而提高其转会交易的可能性</h3>
+        <h3 class="slider-6-txt7">5%</h3>
+        <img class="slider-6-arrow" src="../images/arrow_right.png" alt="">
+        <img class="slider-6-arrow1" src="../images/arrow_CornerLeft.png" alt="">
+        <img class="slider-6-tag1" src="../images/tag.png" alt="">
+        <img class="slider-6-tag2" src="../images/tag.png" alt="">
+        <img class="slider-6-tag3" src="../images/tag.png" alt="">
+        <h5 class="slider-6-tag1-txt">2000</h5>
+        <h5 class="slider-6-tag2-txt">1000</h5>
+        <h5 class="slider-6-tag3-txt">5%</h5>
+        <div class="slider-6-logos">
+            <img class="slider-6-logos-1" src="../images/orijentLogo.png" alt="orijent logo">
+            <img class="slider-6-logos-2" src="../images/juiceLogo.png" alt="juice logo">
+        </div>
+    </div>
+    <div class="newsHero otherHero slider-7">
+        <h1>球员投资- 1</h1>
+        <h2>HNK Orijent 1919 给球迷和粉丝提供了投资球队俱乐部的机会。</h2>
+
+        <h2 class="pt-4 pb-3"><b>运作机制:</b></h2>
+        <ul>
+            <li><h2>俱乐部定义初始价值、税收和贡献，每当交换股份时，税收将支付给球员。</h2></li>
+            <li><h2>持有者交易股份的过程中的收益，有一部分会以税费的形式贡献给代币的整体价值。</h2></li>
+            <li><h2>用户可以竞价来获得一些股份。</h2></li>
+            <li><h2>股东赚取俱乐部给予的奖励</h2>
+                <ul>
+                    <li><h2>进球</h2></li>
+                    <li><h2>赢得比赛</h2></li>
+                </ul>
+            </li>
+            <li><h2>球员转会时，俱乐部将约定的股份分配给所有股东。</h2></li>
+        </ul>
+        <img class="slider-7-img" src="../images/players/dominik_Mulac.png">
+        <div class="otherHero-slider5-logos">
+            <img class="otherHero-slider5-logos-1" src="../images/orijentLogo.png" alt="orijent logo">
+            <img class="otherHero-slider5-logos-2" src="../images/juiceLogo.png" alt="juice logo">
+        </div>
+    </div>
+    <div class="newsHero otherHero slider-8">
+        <h1>球员投资- 2 </h1>
+        <h2>在球员的职业生涯中，其转会价格会不断的上涨，这将会给投资者带来更多的收益。 </h2>
+        <h3 class="slider-8-txt1">初始状态</h3>
+        <h4 class="slider-8-txt2">价值</h4>
+        <h3 class="slider-8-txt3">150'000 $ORI</h3>
+        <h4 class="slider-8-txt4">价格 </h4>
+        <h3 class="slider-8-txt5">1500 %ORI = 1%</h3>
+        <h4 class="slider-8-txt6">球员</h4>
+        <h4 class="slider-8-txt7-chi">股东</h4>
+        <h4 class="slider-8-txt8">总价值增加3750$ORI</h4>
+        <h3 class="slider-8-txt9">1537 $ORI = +2.5 % </h3>
+        <h4 class="slider-8-txt10">新的价格</h4>
+        <h3 class="slider-8-txt11">153’750 $ORI</h3>
+        <h4 class="slider-8-txt12">新的价值</h4>
+        <h3 class="slider-8-txt13">最终获得</h3>
+        <div class="slider-8-center1">50% @ 1500 $ORI <br> <br>
+            总成本<br>
+            股份: 75000 $ORI<br>
+            税: 7500 $ORI<br> <br>
+            757500 $ORI
+        </div>
+        <div class="slider-8-center2">出价</div>
+        <div class="slider-8-center3">3750</div>
+        <div class="slider-8-center4">3750</div>
+        <img class="slider-8-arrow1" src="../images/arrowTop_CornerLeft.png" alt="">
+        <img class="slider-8-arrow2" src="../images/shortRedArrowLeft.png" alt="">
+        <img class="slider-8-arrow3" src="../images/shortRedArrowRight.png" alt="">
+        <div class="otherHero-slider5-logos">
+            <img class="otherHero-slider5-logos-1" src="../images/orijentLogo.png" alt="orijent logo">
+            <img class="otherHero-slider5-logos-2" src="../images/juiceLogo.png" alt="juice logo">
+        </div>
+    </div>
+    <div class="newsHero otherHero slider-8">
+        <h1>球员投资- 3 </h1>
+        <h2>在球员的职业生涯中，其转会价格会不断的上涨，这将会给投资者带来更多的收益。 </h2>
+        <h3 class="slider-8-txt1">最终状态</h3>
+        <h4 class="slider-8-txt2">价值</h4>
+        <h3 class="slider-8-txt3">153'750 $ORI</h3>
+        <h4 class="slider-8-txt4">价格 </h4>
+        <h3 class="slider-8-txt5">1537 %ORI = 1%</h3>
+        <h4 class="slider-8-txt6">球员</h4>
+        <h4 class="slider-8-txt7-chi">股东</h4>
+        <h4 class="slider-8-txt8">总价值增加1850$ORI</h4>
+        <h3 class="slider-8-txt9">1556 $ORI = +1.2 % </h3>
+        <h4 class="slider-8-txt10">新的价格</h4>
+        <h3 class="slider-8-txt11">155’600 $ORI</h3>
+        <h4 class="slider-8-txt12">新的价值</h4>
+        <h3 class="slider-8-txt13">最终获得</h3>
+        <div class="slider-8-center5 ">
+            进球<br>
+            +2000 $ORI
+        </div>
+        <div class="slider-8-center6">奖励</div>
+        <div class="slider-8-center7">
+            赢球<br>
+            +1000 $ORI
+        </div>
+        <div class="slider-8-center8">奖励</div>
+        <div class="slider-8-center3">150</div>
+        <div class="slider-8-center4">1850</div>
+        <img class="slider-8-arrow4" src="../images/longRedArrowLeft.png" alt="">
+        <img class="slider-8-arrow5" src="../images/longRedArrowRight.png" alt="">
+        <img class="slider-8-arrow6" src="../images/arrowTop_CornerLeft.png" alt="">
+        <div class="otherHero-slider5-logos">
+            <img class="otherHero-slider5-logos-1" src="../images/orijentLogo.png" alt="orijent logo">
+            <img class="otherHero-slider5-logos-2" src="../images/juiceLogo.png" alt="juice logo">
+        </div>
+
+    </div>
+    <!--    <div class="newsHero otherHero slider-10">-->
+    <!--        <h1>Tangible Staked Investments</h1>-->
+    <!--        <div class="otherHero-slider5-logos">-->
+    <!--            <img class="otherHero-slider5-logos-1" src="images/orijentLogo.png" alt="orijent logo">-->
+    <!--            <img class="otherHero-slider5-logos-2" src="images/juiceLogo.png" alt="juice logo">-->
+    <!--        </div>-->
+    <!--        <img class="slider-10-p1" src="images/blueProfile.png" alt="">-->
+    <!--        <img class="slider-10-p2" src="images/brownProfile.png" alt="">-->
+    <!--        <img class="slider-10-p3" src="images/brownProfile.png" alt="">-->
+    <!--        <img class="slider-10-p4" src="images/brownProfile.png" alt="">-->
+    <!--        <div class="slider-10-sum">-->
+    <!--            &#8721;-->
+    <!--        </div>-->
+    <!--        <div class="slider-10-c1">-->
+    <!--            5-->
+    <!--        </div>-->
+    <!--        <div class="slider-10-c2">-->
+    <!--            5-->
+    <!--        </div>-->
+    <!--        <div class="slider-10-c3">-->
+    <!--            6-->
+    <!--        </div>-->
+    <!--        <div class="slider-10-c4">-->
+    <!--            20-->
+    <!--        </div>-->
+    <!--        <div class="slider-10-c5">-->
+    <!--            50-->
+    <!--        </div>-->
+    <!--        <div class="slider-10-c6">-->
+    <!--            54-->
+    <!--        </div>-->
+    <!--        <div class="slider-10-c7">-->
+    <!--            200-->
+    <!--        </div>-->
+    <!--        <img class="slider-10-tag" src="images/tag.png" alt="">-->
+    <!--        <div class="slider-10-c8">-->
+    <!--            200-->
+    <!--        </div>-->
+    <!--        <div class="slider-10-c9">-->
+    <!--            200-->
+    <!--        </div>-->
+    <!--        <div class="slider-10-c10">-->
+    <!--            200-->
+    <!--        </div>-->
+    <!--        <div class="slider-10-c11">-->
+    <!--            200-->
+    <!--        </div>-->
+    <!--        <div class="slider-10-c12">-->
+    <!--            200-->
+    <!--        </div>-->
+    <!--        <div class="slider-10-c13">-->
+    <!--            200-->
+    <!--        </div>-->
+    <!--        <div class="slider-10-c14">-->
+    <!--            200-->
+    <!--        </div>-->
+    <!--        <div class="slider-10-c15">-->
+    <!--            200-->
+    <!--        </div>-->
+
+
+    <!--    </div>-->
+
+
+    <%- include("footer.ejs") %>
+</div>
+
+
+</body>
+<script src="/js/bootstrap.min.js"></script>
+</html>

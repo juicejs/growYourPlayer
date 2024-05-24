@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/vue-promise-btn.css" crossorigin="use-credentials">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <!-- jQuery -->
+    <script src="/js/jquery.min.js"></script>
+
+    <!-- Cookies -->
+    <script src="/js/js.cookie.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBL3EPC6BC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-DBL3EPC6BC');
+    </script>
+</head>
+<body>
+<router-view></router-view>
+<div class="container pb-5" style="padding: 0">
+    <div class="hero-and-solution">
+        <section class="hero">
+            <%- include("header.ejs") %>
+        </section>
+    </div>
+    <div class="container" style="padding: 5px 0 0 30px; height: 40px;">
+        <a href="/about/zh">
+            <button style="height: 25px; width: 25px;border-radius: 50%;background-image:url('../images/cnflag.svg');background-repeat: no-repeat; border-width: 0px;
+  background-size: cover;"></button>
+        </a>
+        <a href="/about/ar">
+            <button style="height: 25px; width: 25px;border-radius: 50%;background-image:url('../images/sa.svg');background-repeat: no-repeat; border-width: 0px;
+  background-size: cover;"></button>
+        </a>
+        <a href="/about">
+            <button style="height: 25px; width: 25px;border-radius: 50%;background-image:url('../images/us.svg');background-repeat: no-repeat;border-width: 0px;
+  background-size: cover;"></button>
+        </a>
+        <a href="/about/hr">
+            <button style="height: 25px; width: 25px;border-radius: 50%;background-image:url('../images/hr.svg');background-repeat: no-repeat;border-width: 0px;
+  background-size: cover;"></button>
+        </a>
+
+    </div>
+</div>
+<div class="container">
+    <div class="newsHero firstHero">
+        <h1>DeVest</h1>
+        <h2>Decentralized Vesting</h2>
+        <h2>- More Info Soon -</h2>
+        <img class="firstHero-logo" src="/images/juiceLogo.png" alt="juice logo">
+
+    </div>
+
+    <%- include("footer.ejs") %>
+</div>
+
+
+</body>
+<script src="/js/bootstrap.min.js"></script>
+</html>

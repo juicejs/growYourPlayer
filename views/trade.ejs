@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Trade - Pools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/vue-promise-btn.css" crossorigin="use-credentials">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <!-- jQuery -->
+    <script src="/js/jquery.min.js"></script>
+
+    <!-- Cookies -->
+    <script src="/js/js.cookie.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBL3EPC6BC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-DBL3EPC6BC');
+    </script>
+</head>
+<body>
+<router-view></router-view>
+<div class="container pb-5" style="padding: 0; max-width: 1376px; width: 100%;">
+    <div class="hero-and-solution">
+        <section class="hero">
+            <%- include("header.ejs", { menu: 1 }) %>
+        </section>
+    </div>
+
+    <!--
+    <div id="prepare" style="">
+        <button id="btn-connect" style="" class="card-btn gdlr-button">Connect wallet</button>
+    </div>
+    -->
+
+    <div class="container divConnected">
+        <div class="row">
+            <div class="col-md-12" style="padding: 10px;">
+                <h2>ORI Token Pool - Exchange Trading Token ETT</h2>
+                <div style="font-size: 1.4em;">
+                The three most popular cryptocurrency tokens, BNB, ETH - Ethereum, and BTC - Bitcoin*, are now coupled with the $ORI Token. You as a holder invested in all 3 of those tokens, and might benefit from their performance.
+                 <br/><br/>
+                From the beginning, $ORI was intended to be a long-term investment that would support its investors and give the club access to financing.
+                </div>
+                <div style="margin-top:10px;">* We might switch to other Tokens depending on market situation or other factors.</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="connected" style="display: none;">
+                    <button id="btn-disconnect" class="card-btn gdlr-button">Disconnect wallet</button>
+                    <div id="network">
+                        <strong>Connected blockchain:</strong> <span id="network-name"></span><br>
+                        <strong>Selected account:</strong> <span id="selected-account"></span><br>
+                        <strong>Balance on account:</strong> <span id="account-balance"></span>
+                    </div>
+                    <div>
+                        <!--                        <p style="font-weight: bold; color: #a2008d;">Rules: Minimum 1 BNB and Maximum 6 BNB, if you transfer more, the excess amount will not be returned!</p>-->
+                        <p id="toLessWarning" style="color: red; font-weight: bold; display: none;">Your account balance is not sufficient enough!</p>
+
+                        <div id="transferForm">
+
+                            <!--                            <label>Pay BNB</label>
+                                                        <input id="transferAmount" class="form-control" style="background-color: #f5f5f5; height: 35px; border: 1px solid #acacac; width: 80px;" max="6" min="1" type="number" placeholder="0.0" />
+
+                                                        <label>Receive $NKO Token</label>
+                                                        <input id="transferToken" class="form-control" style="background-color: #f5f5f5; height: 35px; border: 1px solid #acacac; width: 120px;" type="number" placeholder="0.0" />
+
+                                                        <button id="btn-contribute" class="gdlr-button">Buy</button>-->
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-4">
+            <div class="poolInfo">
+                <div style="padding: 10px;"><img src="images/bnb.png" style="width: 100%"></div>
+                <div class="price"><span>Price </span><%= pools.bnb.price.toFixed(4) %> $</div>
+            </div>
+            <div class="poolBar">
+                <div class="barValue" style="height:<%= pools.bnb.value %>%;background:<%= pools.bnb.max ? 'darkgreen' : 'darkorange' %>">
+                    <div class="volume"><%= pools.bnb.poolSize.toFixed(0) %> $</div>
+                    <div class="spred"><%= pools.bnb.spred?.toFixed(4) || 0  %> $</div>
+                </div>
+            </div>
+            <button onclick="window.open('https://pancakeswap.finance/swap?outputCurrency=0x54cC4dB6f878A1cDE6BdD0c8bEfCf70f5DABF206','_blank')" style="" class="card-btn gdlr-button">Swap Now</button>
+        </div>
+        <div class="col-4">
+            <div class="poolInfo">
+                <div style="padding: 10px;"><img src="images/eth.png" style="width: 100%"></div>
+                <div class="price"><span>Price </span><%= pools.eth.price.toFixed(4) %> $</div>
+            </div>
+            <div class="poolBar">
+                <div class="barValue" style="height:<%= pools.eth.value %>%;background:<%= pools.eth.max ? 'darkgreen' : 'darkorange' %>">
+                    <div class="volume"><%= pools.eth.poolSize?.toFixed(0) %> $</div>
+                    <div class="spred"><%= pools.eth.spred?.toFixed(4) %> $</div>
+                </div>
+            </div>
+            <button onclick="window.open('https://pancakeswap.finance/swap?outputCurrency=0x2170Ed0880ac9A755fd29B2688956BD959F933F8&inputCurrency=0x54cC4dB6f878A1cDE6BdD0c8bEfCf70f5DABF206','_blank')" style="" class="card-btn gdlr-button">Swap Now</button>
+        </div>
+        <div class="col-4">
+            <div class="poolInfo">
+                <div style="padding: 10px;"><img src="images/btc.png" style="width: 100%"></div>
+                <div class="price"><span>Price </span><%= pools.btc.price.toFixed(4) %> $</div>
+            </div>
+            <div class="poolBar">
+                <div class="barValue" style="height:<%= pools.btc.value %>%;background:<%= pools.btc.max ? 'darkgreen' : 'darkorange' %>">
+                    <div class="volume"><%= pools.btc.poolSize?.toFixed(0) %> $</div>
+                    <div class="spred"><%= pools.btc?.spred?.toFixed(4) %> $</div>
+                </div>
+            </div>
+            <button onclick="window.open('https://pancakeswap.finance/swap?inputCurrency=0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c&outputCurrency=0x54cC4dB6f878A1cDE6BdD0c8bEfCf70f5DABF206', '_blank')" style="" class="card-btn gdlr-button">Swap Now</button>
+        </div>
+    </div>
+
+
+
+
+    <div style="margin-top: 4em;">
+        <%- include("footer.ejs") %>
+    </div>
+</div>
+</body>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="/js/checkboxes.js"></script>
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://unpkg.com/web3@1.6.1/dist/web3.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/web3modal@1.9.5/dist/index.js"></script>
+<script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.6.6/dist/umd/index.min.js"></script>
+
+<script src="/js/vue.js"></script>
+<script src="/js/vue-router.js"></script>
+<script src="/js/httpVueLoader.js" crossorigin="use-credentials"></script>
+<script type="module" src="/js/vue-promise-btn.umd.js" crossorigin="use-credentials"></script>
+<script type="module" src="/vue/app.js" crossorigin="use-credentials"></script>
+
+<script>
+    const Web3Modal = window.Web3Modal.default;
+    const WalletConnectProvider = window.WalletConnectProvider.default;
+    const evmChains = window.evmChains;
+
+    const providerOptions = {
+        walletconnect: {
+            package: WalletConnectProvider,
+            options: {
+                rpc: {
+                    56: "https://bsc-dataseed1.binance.org"
+                }
+            }
+        }
+    }
+
+    window.web3Modal = new Web3Modal({
+        cacheProvider: true, // optional
+        providerOptions, // required
+        disableInjectedProvider: false, // optional. For MetaMask / Brave / Opera.
+    });
+
+    const reloadPrice = async () => {
+        const req = await fetch("https://apespace.io/api/pairs?chain=bsc&address=0x54cc4db6f878a1cde6bdd0c8befcf70f5dabf206&v=8d74b4e263d8ef43");
+        let ori = await req.json();
+
+        let oriUsd = parseFloat(ori[0].data.price);
+
+        window.price = parseFloat(oriUsd.toFixed(2));
+        document.title = "DeVest - $ORI @ " + oriUsd.toFixed(3) + "$";
+    }
+
+
+    const connect = async () => {
+        try {
+            window.provider = await window.web3Modal.connect();
+
+            const web3 = new Web3(provider);
+            await window.ethereum.request({
+                method: 'wallet_switchEthereumChain',
+                params: [{ chainId: '0x38' }],
+            });
+
+            const chainId = await web3.eth.getChainId();
+
+            // Load chain information over an HTTP API
+            const chainData = evmChains.getChain(chainId);
+            document.querySelector("#network-name").textContent = chainData.name;
+            const accounts = await web3.eth.getAccounts();
+            selectedAccount = accounts[0];
+            document.querySelector("#selected-account").textContent = selectedAccount;
+
+            // fetch account balance
+            const balance = await web3.eth.getBalance(selectedAccount);
+            const ethBalance = web3.utils.fromWei(balance, "ether");
+            const humanFriendlyBalance = parseFloat(ethBalance).toFixed(4);
+            document.querySelector("#account-balance").textContent = humanFriendlyBalance;
+
+            // Display fully loaded UI for wallet data
+            document.querySelector("#prepare").style.display = "none";
+            document.querySelector("#connected").style.display = "block";
+        } catch (e) {
+            console.log("Could not get a wallet connection", e);
+            return;
+        }
+
+    }
+
+    if(localStorage.getItem("WEB3_CONNECT_CACHED_PROVIDER")) {
+        (async () => {
+            await connect();
+            $('#openingModal').modal('show');
+        })();
+    }
+
+    document.querySelector("#btn-connect").addEventListener("click", async () => {
+        $('#openingModal').modal('show');
+        await connect();
+    });
+
+    document.querySelector("#btn-disconnect").addEventListener("click", async () => {
+        if (window.provider.close) {
+            await window.provider.close();
+            await window.web3Modal.clearCachedProvider();
+            localStorage.clear();
+            provider = null;
+        }
+
+        selectedAccount = null;
+
+        // Set the UI back to the initial state
+        document.querySelector("#prepare").style.display = "block";
+        document.querySelector("#connected").style.display = "none";
+    });
+
+
+
+</script>
+
+
+
+</html>
+
