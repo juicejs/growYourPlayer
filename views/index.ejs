@@ -11,8 +11,8 @@
           content="Fan Tokens Orijent, Fan Tokens Ori, Fan Tokens Rijeka, Fan Token, What are Fan Tokens, Digital Tickets HNK Orijent, Fan Token Offering">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <title>$ORI - Fan Token - DeVest</title>
+    <link rel="icon" type="image/x-icon" href="/images/growYourPlayer_logo_noTitle.png">
+    <title>Grow Your Player</title>
 
     <!-- jQuery -->
     <script src="/js/jquery.min.js"></script>
@@ -50,7 +50,7 @@
                         game-changer, both for crypto & football.</h3>
                 </div>
                 <div class="center">
-                    <img src="images/token.png" class="token">
+                    <img src="/images/growYourPlayer_logo_noTitle.png" class="token">
                     <button onclick="location.href='/images/ORI Token Whitepaper V13.pdf'" class="card-btn"
                             id="whitepaper">Whitepaper
                     </button>
@@ -103,7 +103,7 @@
 
         <section class="solutions row" style="height: 800px;">
             <div style="padding: 0 1rem;">
-                <h1 class=" title">orioriori</h1>
+                <h1 class=" title">grow your player</h1>
                 <h2 class="caption">Why $ORI is more than a Fan Token</h2>
             </div>
             <div class="solutions__row" style="margin-bottom: 2rem;">
@@ -311,10 +311,8 @@
     const reloadPrice = async () => {
         const req = await fetch("https://apespace.io/_api/token/pairs?id=1087676");
         let ori = await req.json();
-        debugger;
         let oriUsd = parseFloat(ori[0].price);
 
-        document.title = "$ORI @ " + oriUsd.toFixed(3) + "$";
         document.querySelector("#price").innerHTML = oriUsd.toFixed(3) + "$";
         document.querySelector("#pricetitle").innerHTML = oriUsd.toFixed(3) + "$";
     }

@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #ac2b2b linear-gradient(180deg, rgb(172, 43, 43) 0%, rgb(119, 16, 16) 100%);
+  background: #5b7a1c;
   margin: 0;
   padding: 0;
 }
@@ -2005,7 +2005,7 @@ h5.position {
   position: absolute;
   bottom: 33%;
   color: #4D5154;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -3110,7 +3110,7 @@ input#result {
 }
 
 .title {
-  font-size: 200px;
+  font-size: 100px;
   -webkit-text-stroke: 2px white;
   text-transform: uppercase;
   color: transparent;
@@ -3162,7 +3162,7 @@ button#btn-disconnect {
 
 @media (max-width: 1399.98px) {
   .title {
-    font-size: 12vw;
+    font-size: 9vw;
   }
   .hero-and-solution section.hero .hero-content .left img.dino-standing, .hero-and-solution section.hero .hero-content .center img.dino-standing, .hero-and-solution section.hero .hero-content .right img.dino-standing {
     width: 69%;
@@ -3212,7 +3212,7 @@ button#btn-disconnect {
 }
 @media (max-width: 991.98px) {
   .title {
-    font-size: 9vw;
+    font-size: 7vw;
   }
   .hero-and-solution section.hero .hero-content .left img.dino-standing, .hero-and-solution section.hero .hero-content .center img.dino-standing, .hero-and-solution section.hero .hero-content .right img.dino-standing {
     width: 66%;

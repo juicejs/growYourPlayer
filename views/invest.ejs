@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/vue-promise-btn.css" crossorigin="use-credentials">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/growYourPlayer_logo_noTitle.png">
 
     <!-- jQuery -->
     <script src="/js/jquery.min.js"></script>
@@ -38,7 +38,7 @@
     </div>
 
 
-    <div class="modal fade container-fluid" id="openingModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <!--<div class="modal fade container-fluid" id="openingModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -63,7 +63,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
 
     <!-- Vue dynamic content container -->
@@ -141,7 +141,205 @@
         </div>
     </div>
 
-    <% for(var i = 0; i < players.length; i++) { %>
+    <div class="card">
+        <div class="card-top mt-4">
+            <div class="upcoming-tag" style="background-color: red">
+                <span class="tag">NEW</span>
+            </div>
+            <img class="card-img-top" src="../images/Player4.png" alt="Card image cap">
+            <div class="player-number">
+                1
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="position">GOALKEEPER</h5>
+            <h5 class="card-title mb-3 fw-bold" id="name">Daniel Owusu (23)</h5>
+            <button type="button" class="btn btn-primary invest" onclick="window.openDetails">INVEST</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-top mt-4">
+            <div class="upcoming-tag" style="background-color: green">
+                <span class="tag">NEW</span>
+            </div>
+            <img class="card-img-top" src="../images/Player1.png" alt="Card image cap">
+            <div class="player-number">
+                10
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="position">ATTACKING MIDFIELDER</h5>
+            <h5 class="card-title mb-3 fw-bold" id="name">Kwame Adomah (24)</h5>
+            <button type="button" class="btn btn-primary invest" onclick="window.openDetails">INVEST</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-top mt-4">
+            <img class="card-img-top" src="../images/Player3.png" alt="Card image cap">
+            <div class="player-number">
+                5
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="position">DEFENDER</h5>
+            <h5 class="card-title mb-3 fw-bold" id="name">Kofi Asante (25)</h5>
+            <button type="button" class="btn btn-primary invest" onclick="window.openDetails">INVEST</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-top mt-4">
+            <img class="card-img-top" src="../images/Player5.png" alt="Card image cap">
+            <div class="player-number">
+                4
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="position">DEFENDER</h5>
+            <h5 class="card-title mb-3 fw-bold" id="name">Samuel Agyemang (34)</h5>
+            <button type="button" class="btn btn-primary invest" onclick="window.openDetails">INVEST</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-top mt-4">
+            <div class="upcoming-tag" style="background-color: red">
+                <span class="tag">UPCOMING</span>
+            </div>
+            <img class="card-img-top grey" src="../images/Player2.png" alt="Card image cap">
+            <div class="player-number">
+                3
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="position">FORWARD</h5>
+            <h5 class="card-title mb-3 fw-bold" id="name">Kojo Mensah (22)</h5>
+            <button disabled="true" type="button" class="btn btn-primary invest" onclick="window.openDetails">INVEST</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-top mt-4">
+            <div class="upcoming-tag" style="background-color: red">
+                <span class="tag">UPCOMING</span>
+            </div>
+            <img class="card-img-top grey" src="../images/Player6.png" alt="Card image cap">
+            <div class="player-number">
+                9
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="position">ATTACKER</h5>
+            <h5 class="card-title mb-3 fw-bold" id="name">Michael Osei (26)</h5>
+            <button disabled="true" type="button" class="btn btn-primary invest" onclick="window.openDetails">INVEST</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-top mt-4">
+            <div class="upcoming-tag" style="background-color: red">
+                <span class="tag">UPCOMING</span>
+            </div>
+            <img class="card-img-top grey" src="../images/Player7.png" alt="Card image cap">
+            <div class="player-number">
+                45
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="position">ATTACKER</h5>
+            <h5 class="card-title mb-3 fw-bold" id="name">Emmanuel Boateng (39)</h5>
+            <button disabled="true" type="button" class="btn btn-primary invest" onclick="window.openDetails">INVEST</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-top mt-4">
+            <div class="upcoming-tag" style="background-color: red">
+                <span class="tag">UPCOMING</span>
+            </div>
+            <img class="card-img-top grey" src="../images/Player8.png" alt="Card image cap">
+            <div class="player-number">
+                72
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="position">MIDFIELDER</h5>
+            <h5 class="card-title mb-3 fw-bold" id="name">Kweku Adjei (20)</h5>
+            <button disabled="true" type="button" class="btn btn-primary invest" onclick="window.openDetails">INVEST</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-top mt-4">
+            <div class="upcoming-tag" style="background-color: green">
+                <span class="tag">UPCOMING</span>
+            </div>
+            <img class="card-img-top grey" src="../images/Player9.png" alt="Card image cap">
+            <div class="player-number">
+                99
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="position">GOALKEEPER</h5>
+            <h5 class="card-title mb-3 fw-bold" id="name">Joseph Addo (43)</h5>
+            <button disabled="true" type="button" class="btn btn-primary invest" onclick="window.openDetails">INVEST</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-top mt-4">
+            <div class="upcoming-tag" style="background-color: green">
+                <span class="tag">UPCOMING</span>
+            </div>
+            <img class="card-img-top grey" src="../images/Player10.png" alt="Card image cap">
+            <div class="player-number">
+                54
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="position">RIGHT WINGER</h5>
+            <h5 class="card-title mb-3 fw-bold" id="name">Isaac Tetteh (27)</h5>
+            <button disabled="true" type="button" class="btn btn-primary invest" onclick="window.openDetails">INVEST</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-top mt-4">
+            <div class="upcoming-tag" style="background-color: green">
+                <span class="tag">UPCOMING</span>
+            </div>
+            <img class="card-img-top grey" src="../images/Player11.png" alt="Card image cap">
+            <div class="player-number">
+                62
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="position">LEFT WINGER</h5>
+            <h5 class="card-title mb-3 fw-bold" id="name">Kwesi Appiah (25)</h5>
+            <button disabled="true" type="button" class="btn btn-primary invest" onclick="window.openDetails">INVEST</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-top mt-4">
+            <div class="upcoming-tag" style="background-color: green">
+                <span class="tag">UPCOMING</span>
+            </div>
+            <img class="card-img-top grey" src="../images/Player12.png" alt="Card image cap">
+            <div class="player-number">
+                31
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="position">STRIKER</h5>
+            <h5 class="card-title mb-3 fw-bold" id="name">Asamoah Gyasi (28)</h5>
+            <button disabled="true" type="button" class="btn btn-primary invest" onclick="window.openDetails">INVEST</button>
+        </div>
+    </div>
+
+    <!--<% for(var i = 0; i < players.length; i++) { %>
     <div class="card">
         <div class="card-top mt-4">
             <% if(players[i].tag && players[i].tag.name) { %>
@@ -178,7 +376,7 @@
             <% if(players[i].tag.name === 'upcoming') { %> disabled <% } %>>INVEST</button>
         </div>
     </div>
-    <% } %>
+    <% } %> -->
     <div style="margin-top: 4em;">
         <%- include("footer.ejs") %>
     </div>
