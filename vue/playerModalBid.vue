@@ -9,7 +9,7 @@
         </div>
         <div class="modal-body">
           <div class="upper-content">
-            <img class="modal-image img-fluid img-thumbnail" v-bind:src="'/images/' + player.image"
+            <img class="modal-image img-fluid img-thumbnail" style="width: 300px; height: 300px;" v-bind:src="'/images/' + player.image"
                  alt="Player card image">
             <div class="modal-player-content container-fluid">
               <h5 class="card-title mb-3"><span>Age:</span> <span class="data">{{ player.age }}</span></h5>

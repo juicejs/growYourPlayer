@@ -1,0 +1,45 @@
+body {
+    background: #5b7a1c;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-content {
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    height: 550px;
+}
+
+.hero-subtitle {
+    color: white;
+    position: relative;
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0 15%;
+}
+
+.hero-subtitle h3 {
+    margin: 0;
+}
+
+.promo {
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .hero-subtitle {
+      left: unset;
+      font-size: 20px;
+      padding: 0px;
+      margin: 0 5%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (min-width: 768px) {
+    .hero-subtitle {
+      padding: 0 35px;
+    }
+}

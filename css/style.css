@@ -7,6 +7,7 @@ body {
   background: #5b7a1c;
   margin: 0;
   padding: 0;
+  font-family: "Montserrat";
 }
 
 .top-desktop {
@@ -156,7 +157,7 @@ button.card-btn:hover {
   display: flex;
   flex-flow: column;
   height: fit-content;
-  background-image: url("/images/bg-stadium.jpg");
+  background-image: url("/images/growYourPlayer_hero.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -187,123 +188,6 @@ button.card-btn:hover {
 }
 .hero-and-solution section.hero nav ul li h1:hover {
   color: #e6e6e6;
-}
-.hero-and-solution section.hero .hero-content {
-  display: flex;
-  align-items: flex-start;
-  height: 550px;
-}
-.hero-and-solution section.hero .hero-content .left,
-.hero-and-solution section.hero .hero-content .center,
-.hero-and-solution section.hero .hero-content .right {
-  display: flex;
-  flex-flow: column;
-  position: relative;
-}
-.hero-and-solution section.hero .hero-content .left img.ori-title,
-.hero-and-solution section.hero .hero-content .center img.ori-title,
-.hero-and-solution section.hero .hero-content .right img.ori-title {
-  width: 70%;
-  margin: 0 auto;
-}
-.hero-and-solution section.hero .hero-content .left .priceTitle,
-.hero-and-solution section.hero .hero-content .center .priceTitle,
-.hero-and-solution section.hero .hero-content .right .priceTitle {
-  left: auto;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.hero-and-solution section.hero .hero-content .left .ape,
-.hero-and-solution section.hero .hero-content .center .ape,
-.hero-and-solution section.hero .hero-content .right .ape {
-  left: auto;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.hero-and-solution section.hero .hero-content .left .apeLogo,
-.hero-and-solution section.hero .hero-content .center .apeLogo,
-.hero-and-solution section.hero .hero-content .right .apeLogo {
-  left: auto;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.hero-and-solution section.hero .hero-content .left h3.hero-subtitle,
-.hero-and-solution section.hero .hero-content .center h3.hero-subtitle,
-.hero-and-solution section.hero .hero-content .right h3.hero-subtitle {
-  color: white;
-  position: relative;
-  left: 60px;
-  font-size: 25px;
-  width: 600px;
-  font-weight: lighter;
-  z-index: 10;
-  text-align: center;
-  padding-top: 30px;
-}
-.hero-and-solution section.hero .hero-content .left img.token,
-.hero-and-solution section.hero .hero-content .center img.token,
-.hero-and-solution section.hero .hero-content .right img.token {
-  transform: scale(0.3);
-  align-self: flex-start;
-  width: 100%;
-  top: -8%;
-  position: absolute;
-  right: -3%;
-}
-.hero-and-solution section.hero .hero-content .left img.dino-standing,
-.hero-and-solution section.hero .hero-content .center img.dino-standing,
-.hero-and-solution section.hero .hero-content .right img.dino-standing {
-  width: 73%;
-  position: absolute;
-  left: -60px;
-  top: -61px;
-}
-.hero-and-solution section.hero .hero-content .left .countdown,
-.hero-and-solution section.hero .hero-content .center .countdown,
-.hero-and-solution section.hero .hero-content .right .countdown {
-  width: 80%;
-  bottom: 150px;
-  position: absolute;
-}
-.hero-and-solution section.hero .hero-content .left .countdown .countdown__box,
-.hero-and-solution section.hero .hero-content .center .countdown .countdown__box,
-.hero-and-solution section.hero .hero-content .right .countdown .countdown__box {
-  background-color: rgba(28, 28, 28, 0.6);
-}
-.hero-and-solution section.hero .hero-content .left .card-btn {
-  position: relative;
-  left: 60px;
-}
-.hero-and-solution section.hero .hero-content .right {
-  height: 100%;
-  position: relative;
-}
-.hero-and-solution section.hero .hero-content .right .card-btn {
-  position: absolute;
-  bottom: 75px;
-  right: -50%;
-  left: 0;
-  margin: 0 auto;
-  padding-bottom: 3em;
-}
-.hero-and-solution section.hero .hero-content .left,
-.hero-and-solution section.hero .hero-content .right {
-  width: 40%;
-}
-.hero-and-solution section.hero .hero-content .center {
-  width: 20%;
-  position: unset;
-}
-.hero-and-solution section.hero .hero-content .center img.dragon-skin {
-  height: 695px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
 }
 .hero-and-solution section.solutions {
   height: 675px;
@@ -559,7 +443,7 @@ section.app-download {
   background-color: #fff;
   position: relative;
   display: flex;
-  border-top: 1px solid #BD1823;
+  background-color: #EFEDEC;
 }
 section.app-download .left {
   top: 0;
@@ -606,9 +490,11 @@ section.app-download .left .app-download__link {
 section.app-download .right {
   height: 620px;
   width: 60%;
+  text-align: center;
 }
 section.app-download .right img {
-  width: 200px;
+  width: 100%;
+  height: 100%;
 }
 section.app-download .right .bg-element {
   width: 400px;
@@ -876,7 +762,7 @@ section.footer .footer__bottom .bottom__information span {
     align-items: flex-start;
     flex-flow: column;
     height: fit-content;
-    background-image: url("/images/bg-stadium.jpg");
+    background-image: url("/images/growYourPlayer_hero.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -898,91 +784,6 @@ section.footer .footer__bottom .bottom__information span {
     flex-flow: column;
     height: fit-content;
     overflow-x: hidden;
-  }
-  .hero-and-solution section.hero .hero-content .left {
-    width: 100vw;
-    align-items: center;
-  }
-  .hero-and-solution section.hero .hero-content .left img.ori-title {
-    padding: 25px 25px 25px 0px;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 767px) and (min-width: 768px) {
-  .hero-and-solution section.hero .hero-content .left img.ori-title {
-    padding: 25px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .hero-and-solution section.hero .hero-content .left h3.hero-subtitle {
-    left: unset;
-    font-size: 20px;
-    width: 90%;
-    padding: 0px;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 767px) and (min-width: 768px) {
-  .hero-and-solution section.hero .hero-content .left h3.hero-subtitle {
-    padding: 0 35px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .hero-and-solution section.hero .hero-content .left .card-btn {
-    left: unset;
-    margin: 0 30px;
-    width: 85%;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .hero-and-solution section.hero .hero-content .center {
-    width: 100vw;
-    position: relative;
-    margin-top: 30px;
-  }
-  .hero-and-solution section.hero .hero-content .center img.token {
-    margin: 0 auto;
-    width: 40%;
-    transform: unset;
-    position: relative;
-  }
-  .hero-and-solution section.hero .hero-content .center img.dragon-skin {
-    height: 50vw;
-    width: 61px;
-    transform: rotate(90deg);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .hero-and-solution section.hero .hero-content .right {
-    width: 100vw;
-    display: flex;
-    flex-flow: column-reverse;
-    height: fit-content;
-    position: relative;
-  }
-  .hero-and-solution section.hero .hero-content .right img.dino-standing {
-    position: relative;
-    padding: 0 25px;
-    left: unset;
-    top: unset;
-  }
-  .hero-and-solution section.hero .hero-content .right .card-btn {
-    position: relative;
-    bottom: unset;
-    right: unset;
-    left: unset;
-    margin: 20px 20px 0 20px;
-    width: -webkit-fill-available;
-  }
-  .hero-and-solution section.hero .hero-content .right .countdown {
-    position: relative;
-    width: -webkit-fill-available;
-    padding: 25px;
-    bottom: unset;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -1294,35 +1095,6 @@ button.navbar-toggler {
     align-items: flex-start;
     height: fit-content;
     padding-bottom: 20px;
-  }
-  .hero-and-solution section.hero .hero-content .left .card-btn {
-    left: 45px;
-  }
-  .hero-and-solution section.hero .hero-content .left h3.hero-subtitle {
-    left: 45px;
-    font-size: 19px;
-    width: 390px;
-  }
-  .hero-and-solution section.hero .hero-content .center img.token {
-    transform: scale(1.1);
-  }
-  .hero-and-solution section.hero .hero-content .right img.dino-standing {
-    width: 75%;
-    position: absolute;
-    left: -60px;
-    top: -75px;
-  }
-  .hero-and-solution section.hero .hero-content .right .countdown {
-    width: 80%;
-    bottom: 80px;
-    position: relative;
-  }
-  .hero-and-solution section.hero .hero-content .right .card-btn {
-    position: relative;
-    bottom: 40px;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
   }
   .hero-and-solution section.solutions {
     height: fit-content;
@@ -2060,12 +1832,6 @@ h5.position {
 
 #toggleModal:disabled {
   background: gray;
-}
-
-.hero-and-solution section.hero .hero-content .center #whitepaper {
-  position: absolute;
-  top: 13.4%;
-  left: 50%;
 }
 
 .total, .ori-total {
@@ -3115,9 +2881,9 @@ input#result {
   text-transform: uppercase;
   color: transparent;
   font-weight: bold;
+  font-family: "Arial";
   letter-spacing: 24px;
   text-align: center;
-  font-family: arial;
   padding-top: 17px;
   margin-bottom: 0px;
 }
@@ -3127,7 +2893,6 @@ input#result {
   color: white;
   font-weight: bold;
   text-align: center;
-  font-family: arial;
   margin: 0px;
   letter-spacing: 2px;
 }
@@ -3164,16 +2929,6 @@ button#btn-disconnect {
   .title {
     font-size: 9vw;
   }
-  .hero-and-solution section.hero .hero-content .left img.dino-standing, .hero-and-solution section.hero .hero-content .center img.dino-standing, .hero-and-solution section.hero .hero-content .right img.dino-standing {
-    width: 69%;
-    left: -8%;
-    top: 5%;
-  }
-  .hero-and-solution section.hero .hero-content .left img.token, .hero-and-solution section.hero .hero-content .center img.token, .hero-and-solution section.hero .hero-content .right img.token {
-    transform: scale(0.28);
-    top: -6%;
-    right: -5%;
-  }
   .hero-and-solution .solutions_text {
     font-size: 13px;
   }
@@ -3184,23 +2939,6 @@ button#btn-disconnect {
   }
 }
 @media (max-width: 1199.98px) {
-  .hero-and-solution section.hero .hero-content .left img.dino-standing, .hero-and-solution section.hero .hero-content .center img.dino-standing, .hero-and-solution section.hero .hero-content .right img.dino-standing {
-    width: 82%;
-    left: 18%;
-    top: 3%;
-  }
-  .hero-and-solution section.hero .hero-content .left img.token, .hero-and-solution section.hero .hero-content .center img.token, .hero-and-solution section.hero .hero-content .right img.token {
-    transform: scale(0.26);
-    top: -4%;
-    left: 14%;
-  }
-  .hero-and-solution section.hero .hero-content .center #whitepaper {
-    left: 7%;
-  }
-  .hero-and-solution section.hero .hero-content .right .card-btn {
-    right: 138%;
-    left: unset;
-  }
   .hero-and-solution .solutions_text {
     font-size: 12.5px;
   }
@@ -3213,25 +2951,6 @@ button#btn-disconnect {
 @media (max-width: 991.98px) {
   .title {
     font-size: 7vw;
-  }
-  .hero-and-solution section.hero .hero-content .left img.dino-standing, .hero-and-solution section.hero .hero-content .center img.dino-standing, .hero-and-solution section.hero .hero-content .right img.dino-standing {
-    width: 66%;
-    left: -20%;
-  }
-  .hero-and-solution section.hero .hero-content .center img.token {
-    position: relative;
-    transform: scale(1.4);
-    margin-top: 2em;
-  }
-  .hero-and-solution section.hero .hero-content .right .card-btn {
-    position: absolute;
-    bottom: -168px;
-    right: 4px;
-  }
-  .hero-and-solution section.hero .hero-content .center #whitepaper {
-    position: relative;
-    margin-left: 164%;
-    margin-top: 14%;
   }
   .hero-and-solution .solutions_text {
     font-size: 12px;
@@ -3304,37 +3023,6 @@ button#btn-disconnect {
   }
 }
 @media (max-width: 767.98px) {
-  .hero-and-solution section.hero .hero-content .left img.ori-title, .hero-and-solution section.hero .hero-content .center img.ori-title, .hero-and-solution section.hero .hero-content .right img.ori-title {
-    margin: unset;
-  }
-  .hero-and-solution section.hero .hero-content .left img.dino-standing, .hero-and-solution section.hero .hero-content .center img.dino-standing, .hero-and-solution section.hero .hero-content .right img.dino-standing {
-    position: absolute;
-    margin-top: -81%;
-    transform: scale(0.5);
-    margin-left: 33%;
-  }
-  .hero-and-solution section.hero .hero-content .center img.token {
-    margin-left: 5px;
-    margin-top: -32px;
-    transform: scale(0.5);
-  }
-  .hero-and-solution section.hero .hero-content .center #whitepaper {
-    position: relative;
-    display: block;
-    left: unset;
-    max-width: 330px;
-    width: 100%;
-    margin: 0 auto 0.9em;
-  }
-  .hero-and-solution section.hero .hero-content .right .card-btn {
-    position: relative;
-    bottom: unset;
-    display: block;
-    margin: 0 auto 2em;
-    line-height: 55px;
-    max-width: 330px;
-    width: 100%;
-  }
   .hero-and-solution .solutions_text {
     font-size: 10.8px;
     width: 100%;
@@ -3395,11 +3083,6 @@ button#btn-disconnect {
 @media (max-width: 767.98px) {
   section.tokenomic .tokenomic__charts .charts__pie img.pie__chart {
     width: 100%;
-  }
-}
-@media (max-width: 767.98px) {
-  .hero-and-solution section.hero .hero-content .left h3.hero-subtitle {
-    width: 74%;
   }
 }
 @media (max-width: 767.98px) {

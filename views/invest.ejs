@@ -38,60 +38,12 @@
     </div>
 
 
-    <!--<div class="modal fade container-fluid" id="openingModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5>Disclaimer</h5>
-                </div>
-                <div class="modal-body agree">
-                    <p>Please read the following terms and conditions and hit agree to continue.<br>I am aware that:</p><hr>
-                    <input class="option" type="checkbox" name="foo" value="bar1" id="bar1">
-                    <label for="bar1"><span>Cryptocurrency trading can lead to large and immediate financial losses</span></label><br>
-                    <input class="option" type="checkbox" name="foo" value="bar2" id="bar2">
-                    <label for="bar2"><span>Transactions in cryptocurrency may be irreversible, and losses may not be recoverable</span></label><br>
-                    <input class="option" type="checkbox" name="foo" value="bar3" id="bar3">
-                    <label for="bar3"><span>The nature of cryptocurrency may lead to an increased risk of fraud or cyber attack</span></label><br>
-                    <input class="option" type="checkbox" name="foo" value="bar4" id="bar4">
-                    <label for="bar4"><span>HNK Orijent 1919 and Juice d.o.o. are not responsible for my transactions</span></label><br>
-                    <input type="checkbox" id="agreeToAll">
-                    <label for="agreeToAll"><span style="color: red;">Agree to all</span></label><br>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" onclick="document.location.href='/';">Cancel</button>
-                    <button type="button" class="btn btn-secondary" disabled data-bs-dismiss="modal" id="confirmModal">Confirm</button>
-                </div>
-            </div>
-        </div>
-    </div>-->
-
-
     <!-- Vue dynamic content container -->
     <div id="main">
         <player-bid ref="playerBid"></player-bid>
         <player-shared ref="playerShared"></player-shared>
         <player-shared2 ref="playerShared2"></player-shared2>
     </div>
-
-    <!--
-    <div class="cards-container container" style="max-width: 1376px; width: 100%;margin-top:0;">
-        <div class="top-disclaimer">
-            <h5>This is a preview version</h5>
-            <h5>Data may be subject to change</h5>
-            <img class="img-fluid disclaimer-image" src="../images/dino-under-construction.png" alt="Dino under construction">
-         </div>
-
-        We use simple <template> templating for the example
-        <div id="templates" style="display: none">
-            <template id="template-balance">
-                <tr>
-                    <th class="address"></th>
-                    <td class="balance"></td>
-                </tr>
-            </template>
-        </div>
-    </div>
-    -->
 
     <div id="prepare" style="">
         <button id="btn-connect" style="" class="card-btn gdlr-button">Connect wallet</button>
@@ -110,34 +62,11 @@
                         <strong>Balance on account:</strong> <span id="account-balance"></span>
                     </div>
                     <div>
-                        <!--                        <p style="font-weight: bold; color: #a2008d;">Rules: Minimum 1 BNB and Maximum 6 BNB, if you transfer more, the excess amount will not be returned!</p>-->
                         <p id="toLessWarning" style="color: red; font-weight: bold; display: none;">Your account balance is not sufficient enough!</p>
-
-                        <div id="transferForm">
-
-                            <!--                            <label>Pay BNB</label>
-                                                        <input id="transferAmount" class="form-control" style="background-color: #f5f5f5; height: 35px; border: 1px solid #acacac; width: 80px;" max="6" min="1" type="number" placeholder="0.0" />
-
-                                                        <label>Receive $NKO Token</label>
-                                                        <input id="transferToken" class="form-control" style="background-color: #f5f5f5; height: 35px; border: 1px solid #acacac; width: 120px;" type="number" placeholder="0.0" />
-
-                                                        <button id="btn-contribute" class="gdlr-button">Buy</button>-->
-
-                        </div>
                     </div>
 
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="prog">
-        <div class="progress">
-            <!-- <span class="invested"> Total invested:</span> -->
-            <div class="progress-bar progress-bar-striped " role="progressbar"
-                 aria-valuenow="<%= invested %>" aria-valuemin="0" aria-valuemax="100" style="width:<%= invested %>%; color: black;"><%= invested %> %
-            </div>
-            <span class="target">Circulating: 500000 $ORI</span>
         </div>
     </div>
 
@@ -154,7 +83,18 @@
         <div class="card-body">
             <h5 class="position">GOALKEEPER</h5>
             <h5 class="card-title mb-3 fw-bold" id="name">Daniel Owusu (23)</h5>
-            <button type="button" class="btn btn-primary invest" onclick="window.openDetails">INVEST</button>
+            <div class="row">
+                <div class="col-8 balance">
+                    <p style="color: #595757; font-size: 15px;margin-bottom: 0.1rem;">Balance $ORI</p>
+                    <p class="price" id="balance-<%= players[0].modalId %>"><%= players[0].price.balance %></p>
+                    <p class="price" id="price-<%= players[0].modalId %>" style="font-size:0.9em;color:#4f4f4f;font-weight:normal;"><%= players[0].price.price %>$</p>
+                </div>
+                <div class="col-4" >
+                    <p style="color: #595757; font-size: 15px;margin-bottom: 0.1rem;">Ch. 24/h</p>
+                    <p class="roi" v-bind:style="{ color: players[i].price.profit < 0 ? 'red' : 'green' }" id="roi-<%= players[0].modalId %>"><%= players[0].price.profit %>%</p>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary invest" onclick="window.openDetails(<%= players[0].modalId %>, '<%= players[0].type %>')">INVEST</button>
         </div>
     </div>
 
@@ -171,7 +111,18 @@
         <div class="card-body">
             <h5 class="position">ATTACKING MIDFIELDER</h5>
             <h5 class="card-title mb-3 fw-bold" id="name">Kwame Adomah (24)</h5>
-            <button type="button" class="btn btn-primary invest" onclick="window.openDetails">INVEST</button>
+            <div class="row">
+                <div class="col-8 balance">
+                    <p style="color: #595757; font-size: 15px;margin-bottom: 0.1rem;">Balance $ORI</p>
+                    <p class="price" id="balance-<%= players[1].modalId %>"><%= players[1].price.balance %></p>
+                    <p class="price" id="price-<%= players[1].modalId %>" style="font-size:0.9em;color:#4f4f4f;font-weight:normal;"><%= players[1].price.price %>$</p>
+                </div>
+                <div class="col-4" >
+                    <p style="color: #595757; font-size: 15px;margin-bottom: 0.1rem;">Ch. 24/h</p>
+                    <p class="roi" v-bind:style="{ color: players[i].price.profit < 0 ? 'red' : 'green' }" id="roi-<%= players[1].modalId %>"><%= players[1].price.profit %>%</p>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary invest" onclick="window.openDetails(<%= players[1].modalId %>, '<%= players[1].type %>')">INVEST</button>
         </div>
     </div>
 
@@ -185,13 +136,27 @@
         <div class="card-body">
             <h5 class="position">DEFENDER</h5>
             <h5 class="card-title mb-3 fw-bold" id="name">Kofi Asante (25)</h5>
-            <button type="button" class="btn btn-primary invest" onclick="window.openDetails">INVEST</button>
+            <div class="row">
+                <div class="col-8 balance">
+                    <p style="color: #595757; font-size: 15px;margin-bottom: 0.1rem;">Balance $ORI</p>
+                    <p class="price" id="balance-<%= players[2].modalId %>"><%= players[2].price.balance %></p>
+                    <p class="price" id="price-<%= players[2].modalId %>" style="font-size:0.9em;color:#4f4f4f;font-weight:normal;"><%= players[2].price.price %>$</p>
+                </div>
+                <div class="col-4" >
+                    <p style="color: #595757; font-size: 15px;margin-bottom: 0.1rem;">Ch. 24/h</p>
+                    <p class="roi" v-bind:style="{ color: players[i].price.profit < 0 ? 'red' : 'green' }" id="roi-<%= players[2].modalId %>"><%= players[2].price.profit %>%</p>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary invest" onclick="window.openDetails(<%= players[2].modalId %>, '<%= players[2].type %>')">INVEST</button>
         </div>
     </div>
 
     <div class="card">
         <div class="card-top mt-4">
-            <img class="card-img-top" src="../images/Player5.png" alt="Card image cap">
+            <div class="upcoming-tag" style="background-color: red">
+                <span class="tag">UPCOMING</span>
+            </div>
+            <img class="card-img-top grey" src="../images/Player5.png" alt="Card image cap">
             <div class="player-number">
                 4
             </div>
@@ -199,7 +164,18 @@
         <div class="card-body">
             <h5 class="position">DEFENDER</h5>
             <h5 class="card-title mb-3 fw-bold" id="name">Samuel Agyemang (34)</h5>
-            <button type="button" class="btn btn-primary invest" onclick="window.openDetails">INVEST</button>
+            <div class="row">
+                <div class="col-8 balance">
+                    <p style="color: #595757; font-size: 15px;margin-bottom: 0.1rem;">Balance $ORI</p>
+                    <p class="price" id="balance-<%= players[3].modalId %>"><%= players[3].price.balance %></p>
+                    <p class="price" id="price-<%= players[3].modalId %>" style="font-size:0.9em;color:#4f4f4f;font-weight:normal;"><%= players[3].price.price %>$</p>
+                </div>
+                <div class="col-4" >
+                    <p style="color: #595757; font-size: 15px;margin-bottom: 0.1rem;">Ch. 24/h</p>
+                    <p class="roi" v-bind:style="{ color: players[i].price.profit < 0 ? 'red' : 'green' }" id="roi-<%= players[3].modalId %>"><%= players[3].price.profit %>%</p>
+                </div>
+            </div>
+            <button type="button" disabled="true" class="btn btn-primary invest" onclick="window.openDetails(<%= players[3].modalId %>, '<%= players[3].type %>')">INVEST</button>
         </div>
     </div>
 
